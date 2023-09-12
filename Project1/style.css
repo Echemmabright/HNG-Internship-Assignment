@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+    text-decoration: none;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container::before{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: rgb(209, 179, 9);
+    z-index: 0;
+}
+#hero{
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 70%;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(25px);
+    border: 0.2rem solid rgb(209, 179, 9);
+    border-radius: 1.25rem;
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15) ;
+    padding: 2.1rem 3.75rem;
+    margin: 1rem auto;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#siteName a{
+    font-size: 25px;   
+    color: rgb(138, 194, 138);
+}
+#siteName a #web{
+    color: rgb(209, 179, 9);
+    font-weight: bolder
+}
+#siteName a #manuel{
+    border-bottom: 3px inset rgb(209, 179, 9);
+    font-size: 18px;
+}
+#connectBtn{
+    z-index: 0;
+    outline: none;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 7px;
+    background-color: rgb(209, 179, 5);
+}
+#connectBtn:hover{
+    backdrop-filter: blur(25px);
+    box-shadow: -6px 5px 5px rgba(10, 10, 10, 0.15);
+    background-color: rgb(229, 196, 10);
+}
+
+#connectBtn a, #connectBtn a i{
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 550;
+}
+#infoAndImage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+#infoSection{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+#imagediv{
+    width: 15.625rem;
+    height: 20rem;
+    border: 4px solid rgb(138, 194, 138);
+}
+#slackDisplayImage{
+    width: 14.375rem;
+    height: 18.75rem;
+    margin: 1.875rem 0 0 -1.563rem;
+}
+#heroImage{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* #socialIcons{
+    position: absolute;
+    bottom: 15%;
+    right: 33%;
+} */
+
+#socialIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: 6.3rem;
+    background-color: rgb(138, 194, 138);
+    z-index: 999;
+    padding: 5px 7px;
+    border: 2px solid rgb(138, 194, 138);
+    border-radius: 5px;
+}
+#socialIcons a i {
+    color: whitesmoke;
+}
+#socialIcons a i.fa-facebook:hover {
+    color: rgb(30, 30, 235);
+}
+#socialIcons a i.fa-linkedin-in:hover {
+    color: rgb(79, 79, 247);
+}
+#socialIcons a i.fa-twitter:hover {
+    color: rgb(79, 79, 247);
+}
+#socialIcons a i.fa-instagram:hover {
+    color: rgb(247, 79, 115);
+}
+
+#socialIcons>a:nth-child(2):hover{
+    /* color: rgba(19, 4, 4, 0.957); */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+}
+#gitHold{
+  margin-bottom: 1rem;
+}
+
+#gitHold a{
+    background-color: rgb(209, 179, 9);
+    padding: 5px;
+    width: auto;
+    border-radius: 10px;
+    color: black;
+}
+#gitHold a:hover{
+    background-color: rgb(229, 196, 10);
+
+}
+#arrow{
+    font-weight: bolder;
+}
+#timeHold{
+    font-size: 20px;
+    color: black;
+    background-color:rgb(209, 179, 9);
+    padding: 5px 15px;
+    border-radius: 10px;
+    width: fit-content;
+
+}
+
+#heroText{
+    color: rgb(138, 194, 138);
+}
+h3{
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+h1{
+    font-size: x-large;
+}
+#slackUserName{
+    font-weight: bold;
+    color: rgb(209, 179, 9);
+}
+#myTrack{
+    color: rgb(209, 179, 9);
+}
+#currentDayOfTheWeek {
+    color: rgb(209, 179, 9);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(209, 179, 9);
+}
+#hngIntern a{
+    color: rgb(209, 179, 9);
+    border-bottom: 3px solid rgb(209, 179, 9);
+}
+h2{
+    margin: .5rem 0 1.5rem 0;
+    font-size: 16px;
+}
+p{
+    font-size: small;
+    text-wrap: wrap;
+    text-align: justify;
+    margin-bottom: 2rem;
+    margin-top: .6rem;
+}
+
+/* h3{
+    font-size: 20px;
+}
+h1{
+    font-size: 45px;
+}
+#slackUserName, #myTrack{
+    color: rgb(209, 179, 9);
+    font-weight: bolder;
+}
+h2{
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+#hngIntern{
+    font-weight: bolder;
+    border-bottom: 6px solid rgb(209, 179, 9);
+}
+#hngIntern a{
+    color: rgb(209, 179, 9);
+    text-decoration: none;
+}
+p{
+    color: gray;
+    line-height: 1.2;
+} 
+#currentDayOfTheWeek{
+    font-weight: bolder;
+    color: black;
+}
+#heroImage{
+    position: relative;
+    height: 400px;
+    max-width: 450px;
+    background-color: rgb(209, 179, 9);
+}
+#heroImage::before{
+    position: absolute ;
+    content: "";
+    width: calc(100% -15px);
+    height: calc(100% -15px);
+    outline: 3px solid rgb(209, 179, 9);
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+}
+#slackDisplayImage{
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    height: 100%;
+    object-fit: fill;
+    z-index: 2;
+}  */
+
